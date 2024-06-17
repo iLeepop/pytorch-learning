@@ -13,4 +13,8 @@ img_tensor = transform(img)
 
 writer.add_image("Tensor", img_tensor)
 
+normalize = transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])
+img_tensor = normalize(img_tensor)
+writer.add_image("Normalize", img_tensor, 1)
+
 writer.close()
