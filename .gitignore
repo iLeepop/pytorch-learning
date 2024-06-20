@@ -1,4 +1,5 @@
-/dataset
-logs
+dataset
+logs*
+models
 *.jpg
 *.png
